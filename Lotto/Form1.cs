@@ -100,7 +100,7 @@ namespace Lotto
 
         }
 
-        public void Losuj(object data)
+        private void Losuj(object data)
         {
             if (data is ThreadManager)
             {
@@ -170,7 +170,7 @@ namespace Lotto
                 if (checkBoxPlus.Checked)
                 {
                     labelPlus.Invoke((MethodInvoker)(() => labelPlus.Visible = true));
-                    labelPlus.Invoke((MethodInvoker)(() => labelPlus.Text = $"Cyfra {plus} jest plusem!"));
+                    labelPlus.Invoke((MethodInvoker)(() => labelPlus.Text = $"Liczba {plus} będzie plusem!"));
 
                 }
 
